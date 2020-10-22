@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  background: url(https://images.pexels.com/photos/814449/pexels-photo-814449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  line-height: 100em;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+#threshold {
+  width: 80px;
+}
+#temperature-graph {
+  max-width: 700px;
+  margin: auto;
+}
+#settings {
+  margin: auto !important;
+  margin-bottom: 40px !important;
+  max-width: 400px !important;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
+.switch input {
+  visibility: hidden;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
